@@ -1,0 +1,1 @@
+CREATE DATABASE depression_data;
