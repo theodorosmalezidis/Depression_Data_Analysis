@@ -50,9 +50,45 @@ GROUP BY
     age_bucket;
 ```
 The results
-![age distribution](./images/age distribution.png)
+![age distribution](./images/age_distribution.png)
 *Pie chart of age distribution for individuals diagnosed with clinical depression. This visualization was created with ChatGPT after importing my SQL query results*
+
+It appears that the largest proportion of individuals with depression falls into the 21-80 age range, with the 41-60 and 61-80 age groups being the most prominent,
+each accounting for roughly 31% of the total.This distribution suggests that adulthood, particularly the middle stages, is where depression is most commonly identified.
+
+**Family Structure Impact on Depression**
+
+```sql
+SELECT
+    marital_status,
+    COUNT(*) as count
+FROM
+    depression_data
+GROUP BY
+    marital_status
+ORDER BY
+    count DESC
+```
+The results
+| Marital Status |  Count   |
+|----------      |----------|
+| Married        | 240444   |
+| Single         | 72110    |
+| Windowed       | 68485    |
+| Divorced       | 32729    |
+
+
+
+
+
+
+
 ## 2. Life Style Habits
+
+
+
+
+
 
 ## 3. Medical History and Current Medical Conditions
 
