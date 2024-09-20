@@ -173,6 +173,7 @@ The results
 
 The data suggests that both higher education and employment do not necessarily protect against depression. In fact, individuals with higher education levels still show high counts of depression diagnoses, indicating that other factors might be at play. Additionally high school graduates are often in a transitional phase, either entering the workforce or pursuing higher education. This period can be stressful and uncertain, contributing to mental health challenges.
 
+**Intersection of Employment and Marital Status.**
 
 ```sql
 SELECT
