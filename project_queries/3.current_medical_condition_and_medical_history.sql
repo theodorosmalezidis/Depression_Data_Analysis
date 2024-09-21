@@ -36,6 +36,8 @@ GROUP BY
 ORDER BY
     count DESC  
 
+--Correlation between history of menatl illness and family history of depression.
+
 SELECT
     history_of_mental_illness,
     family_history_of_depression,
@@ -48,16 +50,11 @@ GROUP BY
 ORDER BY
     total_count DESC
 
-/*The bar graph displays the distribution of individuals based on their history of mental illness and family history of depression. Here are some key insights:
-
-    Majority without history: The largest group consists of individuals with neither a personal history of mental illness nor a family history of depression, accounting for over 210,000 individuals.
-
-    Mental illness more common: Individuals with a personal history of mental illness but no family history of depression form the second-largest group (around 91,000), indicating that mental illness may occur independently of family history for many.
-
-    Family depression correlation: The group with both a personal history of mental illness and a family history of depression (34,244) suggests that while family history may increase risk, not all individuals with mental illness have a family history.
-
+/*
+ Majority without history: The largest group consists of individuals with neither a personal history of mental illness nor a family history of depression, accounting for over 210,000 individuals.
+Mental illness more common: Individuals with a personal history of mental illness but no family history of depression form the second-largest group (around 91,000), indicating that mental illness may occur independently of family history for many.
+Family depression correlation: The group with both a personal history of mental illness and a family history of depression (34,244) suggests that while family history may increase risk, not all individuals with mental illness have a family history.
 This analysis can be used to further investigate possible genetic or environmental influences. ​
-
 */
 
 --This query analyzes the association between history of mental illness and substance abuse among individuals diagnosed with clinical depression.
@@ -94,6 +91,8 @@ The smallest group comprises individuals with both a history of mental illness a
 
 --Correlation between life style factors and medical history and condition.
 
+--Chronic medical conditions
+
 SELECT 
     Smoking_Status,
     Alcohol_Consumption,
@@ -114,13 +113,7 @@ ORDER BY
   COUNT(CASE WHEN Chronic_Medical_Conditions = 'Yes' THEN 1 END) DESC
 limit 20
 
-/*Each of the 20 rows represents a distinct combination of lifestyle factors, such as a specific smoking status, alcohol consumption, 
-activity level, dietary habits, and sleep patterns, and shows how often these factors are associated with a history of mental illness. 
-These can be interpreted as the most common or strongest correlations of lifestyle behaviors linked to a history of mental illness among the population in your dataset
-the top 20 groups where these combinations of factors are most associated with a history of mental illness
-*/
---αντιστοιχωσ και στα αλλα
-
+--History of mental illness
 
 SELECT 
     Smoking_Status,
@@ -141,7 +134,7 @@ ORDER BY
   COUNT(CASE WHEN history_of_mental_illness = 'Yes' THEN 1 END) DESC
 limit 20
 
-
+--Family history of depression
 
 SELECT 
     Smoking_Status,

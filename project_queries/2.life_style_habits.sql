@@ -82,7 +82,7 @@ GROUP BY
 ORDER BY
     depression_count DESC
 LIMIT 20
---find trends or patterns among the first 20 correlations.
+
 
 --smoking and alcohol as factors
 SELECT

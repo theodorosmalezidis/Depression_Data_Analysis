@@ -439,7 +439,7 @@ The data shows that while most individuals with depression do not have a family 
 With the following queries i will try to identify  the most common or strongest correlations of lifestyle behaviors linked to either case, among the individuals diagnosed with depression in the dataset.
 
 
-**Chronic medical conditions
+**Chronic medical conditions**
 ```sql
 SELECT 
     Smoking_Status,
@@ -488,9 +488,9 @@ These are the results about the most frequent life habits observed in the top 20
 
 **Good(sleep patterns):** 0
 
-**History of mental illness
-
 The most frequent lifestyle patterns among individuals with depression and chronic medical conditions include non-smoking, moderate alcohol consumption, unhealthy or moderate dietary habits, sedentary lifestyles, and fair or poor sleep quality. These factors suggest that inactivity, poor diet, and sleep disturbances are strongly correlated with both depression and chronic medical conditions, while smoking plays a smaller role in this specific group.
+
+**History of mental illness**
 
 ```sql
 SELECT 
@@ -542,7 +542,6 @@ These are the results about the most frequent life habits observed in the top 20
 
 The most frequent lifestyle habits among individuals with depression and a history of mental illness include being a non-smoker, having moderate alcohol consumption, maintaining moderate or unhealthy dietary habits, leading a sedentary lifestyle, and experiencing fair or poor sleep patterns. These patterns highlight the importance of lifestyle factors such as physical inactivity, poor diet, and sleep disturbances in this group, which may exacerbate the effects of mental illness and depression.
 
-**History of mental illness
 **Family history of depression**
 
 ```sql
